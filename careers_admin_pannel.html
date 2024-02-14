@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Primary Meta Tags -->
+    <title>Illford Digital Careers Admin Page | Manage Job Postings & Applications</title>
+    <meta name="title" content="Illford Digital Careers Admin Page | Manage Job Postings & Applications" />
+    <meta name="description"
+        content="Illford Digital's career opportunities in Kakkanad, Kochi. Control job postings, applications, and career-related content efficiently with our administrative tools." />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <meta name="author" content="Illford Digital">
+    <meta name="content-language" content="english" />
+    <meta name="rating" content="General" />
+
+    <link rel="canonical" href="https://illforddigital.com/admin-login" />
+    <meta name="DC.title" content="Illford Digital Careers Admin Page | Manage Job Postings & Applications" />
+    <meta name="geo.region" content="IN-KL" />
+    <meta name="geo.placename" content="Kochi" />
+    <meta name="geo.position" content="9.967428;76.245444" />
+    <meta name="ICBM" content="9.967428, 76.245444" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://illforddigital.com/admin-login" />
+    <meta property="og:title" content="Illford Digital Careers Admin | Manage Job Postings & Applications" />
+    <meta property="og:description"
+        content="Illford Digital's career opportunities in Kakkanad, Kochi. Control job postings, applications, and career-related content efficiently with our administrative tools." />
+    <meta property="og:image" content="https://illforddigital.com/img/career1.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://illforddigital.com/admin-login" />
+    <meta property="twitter:title" content="Illford Digital Careers Admin | Manage Job Postings & Applications" />
+    <meta property="twitter:description"
+        content="Illford Digital's career opportunities in Kakkanad, Kochi. Control job postings, applications, and career-related content efficiently with our administrative tools." />
+    <meta property="twitter:image" content="https://illforddigital.com/img/career1.png" />
+    <!-- Favicons -->
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Birthstone|IBM Plex Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Birthstone|IBM Plex Sans" rel="stylesheet" />
+    <!-- Fonts -->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic'
+        rel='stylesheet' type='text/css'>
+
+    <!-- SEO Script Part - to all pages-->
+
+
+    <!-- Clarity tracking code for https://illforddigital.com/ -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "jtu2y8fpeo");
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-846TB3YMGF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-846TB3YMGF');
+    </script>
+
+
+    <!-- SEO Script Part ends-->
+
+    <!-- Styles -->
+
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="js/fireConfig.js"></script>
+    <style>
+        /* Add your CSS styles for visually appealing display */
+        /* For simplicity, let's assume a basic table display */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            color: black;
+            font-family: "IBM Plex Sans", sans-serif;
+            text-align: center;
+            font-size: 2rem;
+            text-align: center;
+
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            text-align: left;
+            text-align: center;
+
+        }
+
+        th {
+            text-align: center;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="layout" class="layout">
+
+        <!-- Header -->
+
+        <header id="top" class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="brand js-target-scroll">
+                        <img class="brand-img-white" alt="" width="180" src="./img/brand-white.png">
+                        <img class="brand-img" alt="" width="130" src="img/brand.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html" class="js-target-scroll">Home</a></li>
+                        <li class="dropdown">
+                            <div class="js-target-scroll">Services</div>
+                            <ul class="navbar_dropdown-content">
+                                <li><a href="services/web-development.html">Web Development</a></li>
+                                <li><a href="services/digital-branding.html">Digital Branding</a></li>
+                                <li><a href="services/ppc-services.html">PPC Services</a></li>
+                                <li><a href="services/seo-services.html">SEO Services</a></li>
+                                <li><a href="services/socialmedia-management.html">Social Media Marketing</a></li>
+                                <li><a href="services/content-development.html">Content Development</a></li>
+                            </ul>
+                        </li>
+                        <!--<li><a href="#" class="js-target-scroll">Case Studies</a></li>-->
+                        <!--<li class="nav_gap"><a href="#" class="js-target-scroll">Testimonials</a></li>-->
+                        <li><a href="about.html" class="js-target-scroll">About</a></li>
+                        <!--<li><a href="#" class="js-target-scroll">Careers</a></li>-->
+                        <li><a href="https://illforddigital.com/portfolio" class="js-target-scroll">Portfolio</a></li>
+                        <li><a href="https://illforddigital.com/stories" class="js-target-scroll">Stories</a></li>
+                        <li><a href="careers.html" class="js-target-scroll">Careers</a></li>
+                        <li><a href="contact.html" class="js-target-scroll">Contact Us</a></li>
+                        <button class="admin_logout_btn" type="submit" id="signoutbtn">Log out</button>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <section>
+            <div class="careers_admin_container">
+                <div class="careers_admin_form_holder row">
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        <div class="careers_admin_form_inputs">
+                            <input id="job_id" type="text" placeholder=" Job id" required>
+                            <select id="job_department" required>
+                                <option value=""> Choose Department...</option>
+                                <option value="HR AND ADMIN"> HR AND ADMIN</option>
+                                <option value="ENGINEERING">ENGINEERING</option>
+                                <option value="SUPPORT">SUPPORT</option>
+                                <option value="DESIGN">DESIGN</option>
+                                <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
+                            </select>
+                            <input id="job_position" type="text" placeholder=" Vacancy Name" required>
+                            <input id="job_experience" type="number" placeholder="Experience in Years" required>
+                            <input id="job_deadline" type="date" placeholder="Deadline" required>
+                        </div>
+                        <div class="careers_admin_form_buttons">
+                            <button type="submit" id="insert"> ADD POSITION </button>
+                            <button id="read"> READ ID </button>
+                            <button id="update"> UPDATE </button>
+                            <button id="delete"> DELETE </button>
+                        </div>
+                    </div>
+                    <div class="careers_admin_display col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                        <select name="departmentSelect" id="departmentSelect">
+                            <option value="">All Departments</option>
+                            <option value="HR AND ADMIN">HR AND ADMIN</option>
+                            <option value="DESIGN">DESIGN</option>
+                            <option value="SUPPORT">SUPPORT</option>
+                            <option value="ENGINEERING">ENGINEERING</option>
+                            <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
+                        </select>
+                        <div id="vacanciesTable" class="vacanciesTable"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="banner" class="text-white">
+            <div class="container">
+                <div class="row">
+                    <footer>
+                        <div class="footer_container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-lg-8">
+                                    <a href="" class="footer_logo">
+                                        <img href="#" class="brand-img-white" alt="Illford digital logo design"
+                                            width="120" src="img/Illford digital logo 1.webp">
+                                    </a>
+                                    <a href="" class="footer_copyright">&copy;IllfordDigital</a>
+
+                                    <a href="contact.html" class="footer_contact">Contact</a>
+                                    <a href="privacy-Policy.html" class="footer_privacy_policy">Privacy policy</a>
+                                    <a href="terms-and-conditions.html" class="footer_terms_and_condition ">Terms &
+                                        Conditions</a>
+                                    <a href="../html-sitemap.html" class="footer_privacy_policy">Sitemap</a>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-lg-4">
+                                    <div class="social_button">
+                                        <a href="https://www.facebook.com/illforddigital.kochi" class="fb_button">
+                                            <img class="footerIcons" src="img/icons/social media advertisement (1).webp"
+                                                alt="facebook logo" /></a>
+                                        <a href="https://www.instagram.com/illforddigital/" class="cinsta_button">
+                                            <img class="footerIcons" src="img/icons/social media advertisement (2).webp"
+                                                alt="instagram logo" /></a>
+                                        <a href="https://www.linkedin.com/company/illford-digital/" class="link_button">
+                                            <img class="footerIcons" src="img/icons/social media advertisement (3).webp"
+                                                alt="linkedin logo" /></a>
+                                        <a href="https://twitter.com/Illforddigital" class="twitter_button">
+                                            <img class="footerIcons" src="img/icons/social media advertisement (4).webp"
+                                                alt="twitter logo" /></a>
+                                        <a href="https://www.youtube.com/@IllfordDigital" class="utube_button">
+                                            <img class="footerIcons" src="img/icons/social media advertisement (5).webp"
+                                                alt="youtube logo" /></a>
+
+                                        <a href="https://illforddigital.blogspot.com/"
+                                                       class="utube_button">
+                                            <img class="footerIcons" src="img/social media advertisement (6).webp"
+                                                alt="Blogger logo" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </footer>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-- Scripts -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/interface.js"></script>
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="js/fireConfig.js"></script>
+    <script src="js/admin_pannel_controls.js"></script>
+    <script src="js/career_populator.js"></script>
+    <script src="js/xx.js"></script>
+    <script src="js/BrowserRedirectStatusRemover.js"></script>
+
+
+
+
+
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    // Function to log out the user
+    const logoutUser = () => {
+        const confirmation = confirm("Are you sure you want to log out?");
+        if (confirmation) {
+            // Clear user credentials and information from session storage
+            sessionStorage.removeItem("user-cred");
+            sessionStorage.removeItem("user-info");
+
+            // Redirect to the sign-in page
+            window.location.href = "careers.html";
+        }
+    };
+
+    // Function to check if the user is logged in
+    const checkUserCred = () => {
+        firebase.auth().onAuthStateChanged((user) => {
+            if (!user) {
+                // If the user is not logged in, redirect to the sign-in page
+                window.location.href = "careers.html";
+            }
+        });
+    };
+
+
+    // Add an event listener to the Log Out button
+    const signoutBtn = document.getElementById("signoutbtn");
+    signoutBtn.addEventListener("click", logoutUser);
+
+    // Check if the user is logged in when the page loads
+    window.addEventListener("load", checkUserCred);
+</script>
+
+</html>

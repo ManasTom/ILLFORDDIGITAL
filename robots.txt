@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /stories/wp-admin/
+Disallow: /admin-login/
+Disallow: /adsPage/
+Sitemap: https://illforddigital.com/sitemap.xml
