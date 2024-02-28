@@ -1662,6 +1662,8 @@ a.fa:focus {
   text-decoration: underline;
 }
 
+
+
 .subscribe_form {
   display: flex;
   flex-direction: row;
@@ -1722,6 +1724,8 @@ a.fa:focus {
 /* footer */
 
 .footer_container {
+  font-family: "IBM Plex Sans", sans-serif;
+
   border-top: solid 1px #ccc;
   height: auto;
   width: 100%;
@@ -1730,7 +1734,7 @@ a.fa:focus {
 
 .footer_logo {
   color: #000;
-  font-family: IBM Plex Sans;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 15px;
   width: auto;
   float: left;
@@ -1742,7 +1746,7 @@ a.fa:focus {
 
 .footer_copyright {
   color: #000;
-  font-family: IBM Plex Sans;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 15px;
   font-style: bold;
   width: auto;
@@ -1755,7 +1759,7 @@ a.fa:focus {
 
 .footer_contact {
   color: #000;
-  font-family: IBM Plex Sans;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 15px;
   font-style: normal;
   width: auto;
@@ -1768,7 +1772,7 @@ a.fa:focus {
 
 .footer_privacy_policy {
   color: #000;
-  font-family: IBM Plex Sans;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -1781,7 +1785,7 @@ a.fa:focus {
 
 .footer_terms_and_condition {
   color: #000;
-  font-family: IBM Plex Sans;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -5420,7 +5424,7 @@ h3 i {
 
   .footer_privacy_policy {
     color: #000;
-    font-family: IBM Plex Sans;
+    font-family: "Open Sans", sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 300;
@@ -5437,7 +5441,7 @@ h3 i {
 
   .footer_terms_and_condition {
     color: #000;
-    font-family: IBM Plex Sans;
+    font-family: "Open Sans", sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 300;
@@ -7433,6 +7437,44 @@ h3 i {
 @media (max-width: 767px) {
 
   .subscribe_right_course {
+    justify-content: center !important;
+    padding: 0%;
+    margin: 0%;
+  }
+}
+
+.subscribe_right_service {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #000;
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.subscribe_right_service a {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+
+  .subscribe_right_service {
     justify-content: center !important;
     padding: 0%;
     margin: 0%;

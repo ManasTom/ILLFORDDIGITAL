@@ -74,6 +74,11 @@
 
 <!-- Other pages -->
 <url>
+  <loc>https://illforddigital.com/portfolio</loc>
+  <lastmod>2024-02-21T10:52:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
   <loc>https://illforddigital.com/privacy-Policy</loc>
   <lastmod>2023-11-25T05:59:41+00:00</lastmod>
   <changefreq>weekly</changefreq>
