@@ -10,3 +10,7 @@ function redirectToCareerForm(url) {
 function redirectToTelephone(url) {
     window.location.href="tel:9847861800"
 }
+
+function redirectToServiceAdsForm(url) {
+    window.location.href = "https://illforddigital.com/digital-marketing-services-kochi";
+}
