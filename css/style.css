@@ -904,7 +904,7 @@ a.fa:focus {
   text-transform: uppercase;
 }
 
-.grow_your_audience_left h1 {
+.grow_your_audience_left h2 {
   color: #000;
   font-family: IBM Plex Sans;
   font-size: 70px;
@@ -1215,11 +1215,11 @@ a.fa:focus {
   text-transform: uppercase;
 }
 
-.gallery_container_col2_r2 h1 {
+.gallery_container_col2_r2 h2 {
   color: #000;
   text-align: center;
   font-family: IBM Plex Sans;
-  font-size: 30px;
+  font-size: 31px;
   font-style: normal;
   font-weight: bolder;
   line-height: normal;
@@ -1461,7 +1461,7 @@ a.fa:focus {
   line-height: normal;
 }
 
-.careers_matter h1 {
+.careers_matter h2 {
   color: #fff;
   font-family: IBM Plex Sans;
   font-size: 40px;
@@ -1855,7 +1855,7 @@ a.fa:focus {
   width: 100%;
 }
 
-.blog_left_container_blogText h1 {
+.blog_left_container_blogText h2 {
   font-family: IBM Plex Sans;
   font-size: 95px;
   font-weight: 500;
@@ -2177,6 +2177,10 @@ a.fa:focus {
   line-height: 1.7;
   margin-bottom: 0;
 }
+
+.lead-heading{
+  color: #fff;
+  font-size: 46px;}
 
 .lead-text {
   opacity: 0.7;
@@ -3191,7 +3195,7 @@ body:not(.modal-open) {
   height: auto;
 }
 
-.faq_description_container h1 {
+.faq_description_container h3 {
   font-family: IBM Plex Sans, sans-serif;
   color: #000;
   font-size: 65px;
@@ -5647,7 +5651,7 @@ h3 i {
     text-align: left;
   }
 
-  .faq_description_container h1 {
+  .faq_description_container h3 {
     text-align: center;
     font-size: xx-large;
   }
@@ -5689,6 +5693,11 @@ h3 i {
     text-align: center;
     margin-bottom: 0;
   }
+
+  .lead-heading{
+    color: #fff;
+    font-size: 36px;}
+  
 
   .section-body {
     margin-top: 0px;
@@ -5813,7 +5822,7 @@ h3 i {
     margin-top: 10px;
   }
 
-  .grow_your_audience_left h1 {
+  .grow_your_audience_left h2 {
     font-size: xx-large;
   }
 
@@ -6009,7 +6018,7 @@ h3 i {
     text-transform: uppercase;
   }
 
-  .gallery_container_col2_r2 h1 {
+  .gallery_container_col2_r2 h2 {
     color: #000;
     text-align: center;
     font-family: IBM Plex Sans;
@@ -6068,7 +6077,7 @@ h3 i {
     padding: 5%;
   }
 
-  .careers_matter h1 {
+  .careers_matter h2 {
     font-size: small;
     padding-top: 10%;
   }
@@ -6145,7 +6154,7 @@ h3 i {
     width: 100%;
   }
 
-  .blog_left_container_blogText h1 {
+  .blog_left_container_blogText h2 {
     font-family: IBM Plex Sans;
     font-size: xx-large;
     font-weight: 500;
