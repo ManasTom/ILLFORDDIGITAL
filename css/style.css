@@ -1527,21 +1527,27 @@ a.fa:focus {
   line-height: 25pt;
 }
 
-.contact_centered-heading h1 {
+.contact_centered-heading h2 {
   margin-bottom: 5px;
   margin-top: 5px;
+  font-size: 6rem;
 }
 
 .contact_centered-para {
   color: #000;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: IBM Plex Sans;
   font-size: 15px;
 }
 
-.contact_centered-para p {
+.contact_centered-para h1 {
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 2rem;
+  width: 80%;
 }
 
 .contact_wbutton {
@@ -2181,7 +2187,7 @@ a.fa:focus {
 .lead-text {
   opacity: 0.7;
   /* text-align: justify; */
- 
+
 }
 
 .lead-controls {
@@ -3267,6 +3273,11 @@ body:not(.modal-open) {
   padding-top: 5%;
   font-family: "IBM Plex Sans", sans-serif;
 }
+.contact_ctaDiv h2{
+  color: #000;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 4rem;
+}
 
 .contact_ctaDivATag {
   color: black;
@@ -3283,6 +3294,9 @@ body:not(.modal-open) {
   color: black;
   text-decoration: none;
   border-width: 0px;
+}
+.contact_contactUs_container h2{
+  font-size: 4rem;
 }
 
 .contact_contactUs_container input {
@@ -3384,6 +3398,7 @@ body:not(.modal-open) {
   font-size: 1.8rem;
   font-weight: bold;
 }
+
 .contact_page_submitButton:hover {
   width: 10rem;
   height: 5rem;
@@ -3430,7 +3445,7 @@ body:not(.modal-open) {
   padding-bottom: 10%;
 }
 
-.about_subBanner_text h1 {
+.about_subBanner_text h2 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 80px;
   color: #000;
@@ -5047,7 +5062,7 @@ transition: transform 0.3s;
   object-fit: cover;
 }
 
-.services_page_section7_leftCol a{
+.services_page_section7_leftCol a {
   text-decoration: none;
 }
 
@@ -5096,6 +5111,9 @@ transition: transform 0.3s;
 
 .career_part_joining h5 {
   font-size: 16px;
+}
+.career_part_joining h2 {
+  font-size: 4rem;
 }
 
 .career_part_joining p {
@@ -7523,6 +7541,6 @@ h3 i {
 }
 
 
-.default_orange{
+.default_orange {
   color: #ef6c00;
 }
