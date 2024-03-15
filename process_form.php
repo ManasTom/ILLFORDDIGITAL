@@ -1,22 +1,49 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $countryCode = $_POST['countryCode'];
-    $message = $_POST['message'];
+    // Sanitize user input
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $countryCode = htmlspecialchars($_POST['countryCode']);
+    $message = htmlspecialchars($_POST['message']);
 
-    $to = "contact@illforddigital.com, illforddigital@gmail.com"; 
-    $subject = "Enquiry for Digital Marketing Services - contact page ";
-    $headers = "From: $email";
+    // Validate email and phone number formats
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        // Handle invalid email address
+        header('Location: oops.html');
+        exit;
+    }
 
-    $email_body = "You have received a new message from \n".
-                   "Full Name : $name \n".
-                  "Email address: $email\n".
-                  "Mobile Number: $countryCode $phone\n".
-                  "Message:\n $message";
+    if (!preg_match('/^\+\d{1,3}$/', $countryCode)) {
+        // Handle invalid country code
+        header('Location: oops.html');
+        exit;
+    }
 
-    // mail() function to send the email
+    if (!preg_match('/^\d{10}$/', $phone)) {
+        // Handle invalid phone number
+        header('Location: oops.html');
+        exit;
+    }
+
+    // Set recipient email addresses
+    $to = "contact@illforddigital.com, illforddigital@gmail.com";
+    
+    // Set email subject
+    $subject = "Enquiry for Digital Marketing Services - contact page";
+    
+    // Set email headers
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+
+    // Construct email body
+    $email_body = "You have received a new message from\n".
+                   "Full Name: $name\n".
+                   "Email address: $email\n".
+                   "Mobile Number: $countryCode $phone\n".
+                   "Message:\n$message";
+
+    // Send the email
     if (mail($to, $subject, $email_body, $headers)) {
         // Send thank-you email to the responder
         $responder_subject = "Thank you for contacting us!";
@@ -28,9 +55,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Redirect to the thank-you page
         header('Location: alert.html');
+        exit;
     } else {
         // Redirect to the error page if there's an issue with sending the email
         header('Location: oops.html');
+        exit;
     }
+} else {
+    // Redirect to the error page if there's an issue with the form submission
+    header('Location: oops.html');
+    exit;
 }
 ?>

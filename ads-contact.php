@@ -1,16 +1,42 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $email = $_POST['email'];
-    $countryCode = $_POST['countryCode'];
-    $phone = $_POST['phone'];
-    $message = $_POST['message'];
+    // Sanitize user input
+    $firstname = htmlspecialchars($_POST['firstname']);
+    $lastname = htmlspecialchars($_POST['lastname']);
+    $email = htmlspecialchars($_POST['email']);
+    $countryCode = htmlspecialchars($_POST['countryCode']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $message = htmlspecialchars($_POST['message']);
 
-    $to = "contact@illforddigital.com, illforddigital@gmail.com"; // Your email address
-    $subject = " Enquiry for Digital Marketing Course";
-    $headers = "From: $email";
+    // Validate email and phone number formats
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        // Handle invalid email address
+        header('Location: oops.html');
+        exit;
+    }
 
+    if (!preg_match('/^\+\d{1,3}$/', $countryCode)) {
+        // Handle invalid country code
+        header('Location: oops.html');
+        exit;
+    }
+
+    if (!preg_match('/^\d{10}$/', $phone)) {
+        // Handle invalid phone number
+        header('Location: oops.html');
+        exit;
+    }
+
+    // Set recipient email addresses
+    $to = "contact@illforddigital.com, illforddigital@gmail.com";
+
+    // Set email subject
+    $subject = "Enquiry for Digital Marketing Course";
+
+    // Set email headers
+    $headers = "From: $email\r\n";
+
+    // Construct email body
     $email_body = "You have received a new message from $firstname $lastname.\n".
                   "Email address: $email\n".
                   "Mobile Number: $countryCode $phone\n".
@@ -26,9 +52,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         mail($email, $responder_subject, $responder_message, $responder_headers);
         header('Location: thankyou.html');
+        exit;
     } else {
         header('Location: oops.html');
-        
+        exit;
     }
 }
 ?>

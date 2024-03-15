@@ -123,6 +123,14 @@ body {
   display: block;
 }
 
+
+.navbar_tel_button{
+  background: #ef6c00;
+  border: 0;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
 /* 1.3 Typography */
 
 h1,
@@ -1993,6 +2001,7 @@ a.fa:focus {
 .brand {
   display: inline-block;
   text-align: center;
+  padding-top: 20px;
 }
 
 .brand:hover,
@@ -2012,13 +2021,17 @@ a.fa:focus {
 /* 2.2 Navigation */
 
 .navbar-nav {
-  padding-top: 27px;
-  margin: 0;
+  padding-top: 20px;
   color: #fff;
   width: auto;
   font-size: 15px;
   font-weight: 500;
 }
+.navbar_element_padding{
+  padding-top: 1%;
+}
+
+
 
 .navbar-nav li {
   position: relative;

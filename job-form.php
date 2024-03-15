@@ -1,12 +1,25 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect form data
-    $jobId = $_POST['jobId'];
-    $jobTitle = $_POST['jobTitle'];
-    $applicantName = $_POST['applicantName'];
-    $email = $_POST['email'];
-    $phoneNumber = $_POST['phoneNumber'];
-    $message = $_POST['message'];
+    // Sanitize user input
+    $jobId = htmlspecialchars($_POST['jobId']);
+    $jobTitle = htmlspecialchars($_POST['jobTitle']);
+    $applicantName = htmlspecialchars($_POST['applicantName']);
+    $email = htmlspecialchars($_POST['email']);
+    $phoneNumber = htmlspecialchars($_POST['phoneNumber']);
+    $message = htmlspecialchars($_POST['message']);
+
+    // Validate email and phone number formats
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        // Handle invalid email address
+        header('Location: oops.html');
+        exit;
+    }
+
+    if (!preg_match('/^\d{10}$/', $phoneNumber)) {
+        // Handle invalid phone number
+        header('Location: oops.html');
+        exit;
+    }
 
     // File upload handling for the resume
     $resume = $_FILES['resume'];
@@ -62,6 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     foreach ($recipients as $recipient) {
         if (!mail($recipient, $subject, $body, $headers)) {
             echo "Error sending email to $recipient";
+            exit;
         }
     }
 
@@ -76,6 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Send the confirmation email to the applicant
     if (!mail($email, $confirmationSubject, $confirmationMessage, $confirmationHeaders)) {
         echo "Error sending confirmation email to $email";
+        exit;
     }
 
     // Redirect to the thank-you page
