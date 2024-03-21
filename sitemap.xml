@@ -4,102 +4,84 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
- <!-- Homepage -->
+<!--  Homepage  -->
 <url>
   <loc>https://illforddigital.com/</loc>
-  <lastmod>2024-03-11T05:59:41+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-15T06:23:35+00:00</lastmod>
   <priority>1.00</priority>
 </url>
-
-<!-- About pages -->
+<!--  About pages  -->
 <url>
   <loc>https://illforddigital.com/about</loc>
-  <lastmod>2024-03-11T05:59:41+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-13T09:39:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://illforddigital.com/careers</loc>
+  <lastmod>2024-03-13T09:39:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://illforddigital.com/contact</loc>
-  <lastmod>2024-03-11T05:59:41+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-13T09:39:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-<url>
-  <loc>https://illforddigital.com/careers</loc>
-  <lastmod>2024-03-11T05:59:41+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<!-- Service pages -->
+<!--  Service pages  -->
 <url>
   <loc>https://illforddigital.com/services/web-development</loc>
-  <lastmod>2024-03-11T05:58:51+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-13T09:39:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://illforddigital.com/services/digital-branding</loc>
-  <lastmod>2024-03-11T05:58:51+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-13T09:39:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://illforddigital.com/services/ppc-services</loc>
-  <lastmod>2024-03-11T05:58:51+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-13T09:39:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://illforddigital.com/services/seo-services</loc>
-  <lastmod>2024-03-11T05:58:51+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-13T09:39:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://illforddigital.com/services/socialmedia-management</loc>
-  <lastmod>2024-03-11T05:58:51+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-13T09:39:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://illforddigital.com/services/content-development</loc>
-  <lastmod>2024-03-11T05:58:50+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-13T09:39:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-<!--  Other pages  -->
+<!--   Other pages   -->
 <url>
-<loc>https://illforddigital.com/portfolio</loc>
-<lastmod>2024-02-21T10:52:43+00:00</lastmod>
-<priority>0.65</priority>
+  <loc>https://illforddigital.com/portfolio</loc>
+  <lastmod>2024-03-13T09:39:09+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://illforddigital.com/privacy-policy</loc>
-<lastmod>2024-03-11T05:59:41+00:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.65</priority>
+  <loc>https://illforddigital.com/privacy-policy</loc>
+  <lastmod>2024-03-14T04:22:44+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://illforddigital.com/terms-and-conditions</loc>
-<lastmod>2024-03-11T05:59:41+00:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.65</priority>
+  <loc>https://illforddigital.com/terms-and-conditions</loc>
+  <lastmod>2024-03-14T04:22:44+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://illforddigital.com/digital-marketing-services-kochi</loc>
-<lastmod>2024-01-18T09:23:14+00:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+  <loc>https://illforddigital.com/digital-marketing-services-kochi</loc>
+  <lastmod>2024-03-13T09:39:09+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://illforddigital.com/digital-marketing-courses-kochi</loc>
-<lastmod>2024-01-12T09:17:17+00:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+  <loc>https://illforddigital.com/digital-marketing-courses-kochi</loc>
+  <lastmod>2024-03-13T09:39:09+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 </urlset>
+
