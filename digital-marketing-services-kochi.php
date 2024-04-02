@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    if (!preg_match('/^\+\d{1,3}$/', $phone)) {
+    if (!preg_match('/^\d{10}$/', $phone)) {
         // Handle invalid phone number
         header('Location: oops.html');
         exit;
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         mail($email, $responder_subject, $responder_message, $responder_headers);
         
         // Redirect to the thank-you page
-        header('Location: digital-marketingServices-thankyou.html');
+        header('Location: dm-services-thank-you.html');
         exit;
     } else {
         // Redirect to the error page if there's an issue with sending the email

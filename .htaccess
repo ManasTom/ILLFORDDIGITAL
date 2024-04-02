@@ -6,7 +6,7 @@
 
 
     
-    #removing trailing slash
+     #removing trailing slash
     RewriteCond %{REQUEST_FILENAME} !-d     
     RewriteRule ^(.*)/$ $1 [R=301,L]
 

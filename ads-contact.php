@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $responder_headers = "From: illforddigital@gmail.com"; // Change this to your sender email
 
         mail($email, $responder_subject, $responder_message, $responder_headers);
-        header('Location: thankyou.html');
+        header('Location: dm-courses-thank-you.html');
         exit;
     } else {
         header('Location: oops.html');
