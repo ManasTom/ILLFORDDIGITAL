@@ -299,14 +299,26 @@
     width: 100%;
     height: auto;
     display: flex;
-    padding: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 5%;
     justify-content: space-between;
+    overflow-x: hidden;
 }
+
+.sec4 img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
 .sec4 img:hover {
     scale: 130%;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .sec4 {
         width: 100%;
         height: auto;
@@ -322,7 +334,7 @@
         width: 70%;
         margin-top: 2%;
     }
-}
+} */
 
 
 .sec5 {
@@ -565,6 +577,7 @@
     background-color: #F8F8F8;
     width: 100%;
     height: auto;
+    background-image: url(../img/ads-serv-background-line.svg);
 }
 
 .sec8_cl1_holder {
@@ -573,8 +586,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    width: 100%;
-    background-image: url(../img/ads-serv-background-line.svg);
+   
 }
 
 .sec8_cl1_txt {
@@ -587,13 +599,13 @@
 .sec8_cl1_txt h6 {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 .sec8_cl1_txt p {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     padding-top: 15%;
 }
@@ -604,7 +616,6 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    width: 100%;
 }
 
 .sec8_form_box {
@@ -726,6 +737,22 @@
 
 
 
+@media screen and (max-width:1199px){
+
+.sec8_cl1_txt{
+    padding-bottom: 3%;
+}
+
+.sec8_cl1_txt p{
+    padding-top: 2%
+}
+
+} 
+
+
+
+
+/* 
 .sec9 {
     width: 100%;
     height: auto;
@@ -771,6 +798,121 @@
     font-family: "IBM Plex Sans", sans-serif;
 
 }
+
+@media (max-width: 768px) {
+    .sec9_footer_text_holder h6 {
+        font-size: 2.5rem;
+    }
+    
+    .sec9_footer_text_holder p {
+        font-size: 1.3rem;
+}
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec9{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.sec9_text_holder{
+    width: 100%;
+    height: auto;
+padding-top: 9%;
+padding-left: 6%;
+}
+
+.sec9_text_holder h6{
+    font-size: 320%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.sec9_text_holder p{
+    font-size: 180%;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.sec9_contact_holder{
+    padding-top: 6%;
+    padding-right: 12%;
+    padding-left: 5%;
+}
+
+.sec9_map_holder{
+    padding-bottom: 5%;
+    width: 80%;
+}
+
+.sec9_contact_text_holder{
+    width: 80%;
+}
+
+.sec9_contact_text_holder h5{
+    font-size: 100%;
+}
+
+
+@media screen and (max-width:991px) {
+
+    .sec9_text_holder h6{
+        font-size: 270%;
+    }
+    
+    .sec9_text_holder p{
+        font-size: 130%;
+    }
+
+.sec9_contact_holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+@media screen and (max-width:400px){
+
+    .sec9_text_holder h6{
+        font-size: 230%;
+    }
+    
+    .sec9_text_holder p{
+        font-size: 110%;
+    }
+
+/* .sec9_contact_text_holder{
+    width: 90%;
+} */
+    
+    .sec9_contact_text_holder h5{
+        font-size: 80%;
+    
+    }
+
+} 
+
+
+
+
+
+
 
 .ads_contact_mapWidget_container_text h5 {
     width: 100%;
@@ -993,7 +1135,7 @@
     /* Set the width as per your requirement */
     height: auto;
     /* Set the height as per your requirement */
-    overflow: hidden;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -1016,6 +1158,7 @@
     color: rgb(0, 0, 0);
     text-align: left;
     padding-left: 10%;
+    overflow: hidden;
 }
 
 .text-overlay h3 {
