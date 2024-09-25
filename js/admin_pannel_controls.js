@@ -12,7 +12,7 @@ function readFom() {
 
 document.getElementById("insert").onclick = function () {
     readFom();
-
+    
     if (jobId, Dept, vacancyName, Experience, deadLine) {
         firebase
         .database()
@@ -35,6 +35,8 @@ document.getElementById("insert").onclick = function () {
     document.getElementById("job_position").value = "";
     document.getElementById("job_experience").value = "";
     document.getElementById("job_deadline").value = "";
+
+    
 };
 
 document.getElementById("read").onclick = function () {

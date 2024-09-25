@@ -23,8 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepare email headers
     $to = "contact@illforddigital.com, illforddigital@gmail.com";
+    $cc = "dm.illforddigital@gmail.com, edb@illforddigital.com"; 
     $subject = "Enquiry for Digital Marketing Services - Home Page";
     $headers = "From: " . $email . "\r\n";
+    $headers .= "CC: " . $cc . "\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/plain; charset=utf-8\r\n";

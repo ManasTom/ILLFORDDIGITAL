@@ -52,6 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $boundary = md5(time());
 
     // Headers for the email
+    $cc = "dm.illforddigital@gmail.com, edb@illforddigital.com"; 
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "MIME-Version: 1.0\r\n";

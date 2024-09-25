@@ -30,11 +30,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set recipient email addresses
     $to = "contact@illforddigital.com, illforddigital@gmail.com";
 
+ // Set CC email addresses
+ $cc = "dm.illforddigital@gmail.com, edb@illforddigital.com"; 
+
     // Set email subject
     $subject = "Enquiry for Digital Marketing Course";
 
     // Set email headers
     $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "CC: $cc\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion();
 
     // Construct email body
     $email_body = "You have received a new message from $firstname $lastname.\n".
@@ -51,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $responder_headers = "From: illforddigital@gmail.com"; // Change this to your sender email
 
         mail($email, $responder_subject, $responder_message, $responder_headers);
-        header('Location: thankyou.html');
+        header('Location: dm-courses-thank-you.html');
         exit;
     } else {
         header('Location: oops.html');

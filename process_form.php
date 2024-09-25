@@ -29,12 +29,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set recipient email addresses
     $to = "contact@illforddigital.com, illforddigital@gmail.com";
     
+ // Set CC email addresses
+ $cc = "dm.illforddigital@gmail.com, edb@illforddigital.com"; // Change this to your desired CC email address
+
     // Set email subject
     $subject = "Enquiry for Digital Marketing Services - contact page";
     
     // Set email headers
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
+    $headers .= "CC: $cc\r\n";
 
     // Construct email body
     $email_body = "You have received a new message from\n".

@@ -60,3 +60,5 @@ Redirect 301 /privacy-Policy https://illforddigital.com/privacy-policy
 Redirect 301 /services/about  https://illforddigital.com/about
 Redirect 301 /services/index https://illforddigital.com/
 Redirect 301 /services/terms-and-conditions  https://illforddigital.com/terms-and-conditions
+
+Access-Control-Allow-Origin
